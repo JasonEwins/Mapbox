@@ -1,3 +1,12 @@
+This project has been created with Mapbox and the React-Map-GL library: https://github.com/uber/react-map-gl
+
+Functionality:
+- Display location data from remoteJSON feed 
+https://s3-eu-west-1.amazonaws.com/omnifi/techtests/locations.json
+- on click of a location pin, a tool-tip displays/hides Capital City & Country data
+
+NB: the location data is for example purposes only, the Latitude and Longitude data is fictional, hence the placement of location pins is awry.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
