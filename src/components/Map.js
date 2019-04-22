@@ -33,7 +33,7 @@ import '../styles/App.css';
       <MapGL
         {...viewport}
         mapboxApiAccessToken={process.env.REACT_APP_TOKEN}
-        mapStyle='mapbox://styles/jacere/cjupneshq303m1fmx013p18m4'
+        mapStyle='mapbox://styles/jacere/cjup7pjta4ard1gqs7k4w44u7'
         onViewportChange={viewport => {
           setViewport(viewport)  
         }}
