@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import MapGL, { Marker, Popup } from 'react-map-gl';
+import MapGL, { Marker, Popup, FlyToInterpolator } from 'react-map-gl';
+
 
 import '../styles/App.css';
 
@@ -14,6 +15,16 @@ import '../styles/App.css';
   });
 
   const [selectedCapital, setSelectedCapital] = useState(null);
+
+  const [londonViewport] = useState(
+    {
+      longitude: -0.12574,
+      latitude: 51.50853,
+      zoom: 13,
+      transitionDuration: 5200,
+      transitionInterpolator: new FlyToInterpolator()
+    }
+  );
 
   // Show/Hide Capital modal 
   const toggleCapital = (location) => {
@@ -53,6 +64,9 @@ import '../styles/App.css';
             </div>
           </Popup>
         ) : null}
+        <button className="showLondon" onClick={viewport => {
+          setViewport(londonViewport)  
+        }}>Go to London</button>
       </MapGL>
     </div>
   );

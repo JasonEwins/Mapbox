@@ -4,6 +4,7 @@ Functionality:
 - Display location data from remoteJSON feed 
 https://s3-eu-west-1.amazonaws.com/omnifi/techtests/locations.json
 - on click of a location pin, a tool-tip displays/hides Capital City & Country data
+- on click of 'Go to London' CTA, the user is navigated to central London, with easing transition.
 
 NB: the location data is for example purposes only, the Latitude and Longitude data is fictional, hence the placement of location pins is awry.
 
